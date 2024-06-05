@@ -31,3 +31,8 @@ TEST(TestTopic, MoreEqualityTests)
   ASSERT_EQ(getMeaningOfLife(), 42) << "Oh no, a mistake!";
   EXPECT_FLOAT_EQ(23.23F, 23.23F);
 }
+
+int main(int argc, char **argv) {
+  testing::InitGoogleTest(&argc, argv);
+  return (RUN_ALL_TESTS());
+}
